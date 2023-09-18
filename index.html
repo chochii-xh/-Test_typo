@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	#e{font-size: 4rem; 
+		font-family: 'Noto Serif KR', serif;}
+	#z{font-size: 4rem; 
+   		font-family: 'Black Han Sans', sans-serif;}
+   	#y{font-size: 4rem; 
+   		font-family: 'Noto Sans KR', sans-serif;}
+</style>
+<body>
+	배경<input type="color" id="c">
+	글자색<input type="color" id="d">
+	글자크기<input type="range" id="f" min="3" max="15">
+	<input type="text" value="교수님 수업 끝내줘요" id="g">
+	<div id="e">교수님 수업 끝내줘요</div>
+	<div id="y">교수님 수업 끝내줘요</div>
+	<div id="z">교수님 수업 끝내줘요</div>
+<script type="text/javascript">
+	c.oninput = function(){
+		document.body.style.background = c.value;
+	}
+	d.oninput = function(){
+		e.style.color = z.style.color = y.style.color = d.value;
+	}
+	f.oninput = function(){
+		e.style.fontSize = z.style.fontSize = y.style.fontSize = f.value + "rem";
+	}
+	g.oninput = function(){
+		e.innerHTML = z.innerHTML = y.innerHTML = g.value;
+	}
+</script>
+
+</body>
+</html>
